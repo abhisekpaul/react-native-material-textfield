@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import {
   View,
-  Text,
   TextInput,
   Animated,
   StyleSheet,
@@ -82,11 +81,11 @@ export default class TextField extends PureComponent {
       bottom: PropTypes.number,
     }),
 
-    labelOffset: Label.propTypes.offset,
+    labelOffset: PropTypes.offset,
 
-    labelTextStyle: Text.propTypes.style,
-    titleTextStyle: Text.propTypes.style,
-    affixTextStyle: Text.propTypes.style,
+    labelTextStyle: PropTypes.style,
+    titleTextStyle: PropTypes.style,
+    affixTextStyle: PropTypes.style,
 
     tintColor: PropTypes.string,
     textColor: PropTypes.string,
@@ -104,8 +103,8 @@ export default class TextField extends PureComponent {
     activeLineWidth: PropTypes.number,
     disabledLineWidth: PropTypes.number,
 
-    lineType: Line.propTypes.lineType,
-    disabledLineType: Line.propTypes.lineType,
+    lineType: PropTypes.lineType,
+    disabledLineType: PropTypes.lineType,
 
     disabled: PropTypes.bool,
 
